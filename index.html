@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="view">
+                <h2>Calculator</h2>
+            </div>
+            <div class="screen">
+                <input  id="scrn" type="text" title="Please insert a number">
+            </div>
+            <div  class="cacte">
+                <div class="calculate">
+                    <div class="calc1">
+                        <span id ="clear" onclick="clearScreen()" title="clear screen" class="button clear">C</span>
+                        <span id="delete" class="brac ac">Del</span>
+                        <span id="percent" onclick="display('%')" class="operation per">&percnt;</span>
+                        <span id="operation divide" onclick="display('/')" class="operation div">&divide;</span>
+                    </div>
+                    <div class="calc1 calc2">
+                        <span  id="one" onclick="display('7')" class="clear one">7</span>
+                        <span  id="two" onclick="display('8')" class=" brac two">8</span>
+                        <span id="three" onclick="display('9')" class=" per three">9</span>
+                        <span id="operation multiply" onclick="display('*')" class=" div times">x</span>
+                    </div>
+                    <div class="calc1 calc3">
+                        <span id="four" onclick="display('4')" class=" clear four">4</span>
+                        <span id="five" onclick="display('5')" class=" brac five">5</span>
+                        <span id="six" onclick="display('6')" class=" per six">6</span>
+                        <span id="operation add" onclick="display('+')" class="operation div">&plus;</span>
+                    </div>
+                    <div class="calc1 calc4">
+                        <span  id="seven" onclick="display('1')" class=" clear seven">1</span>
+                        <span id="eight" onclick="display('2')" class=" brac eight">2</span>
+                        <span id="nine" onclick="display('3')" class=" per nine">3</span>
+                        <span id="operation substract" onclick="display('-')" class="operation div">&minus;</span>   
+                    </div>
+                    <div class="calc1 calc5">
+                        <span id="decimal" onclick="display('.')" class=" clear decimal">.</span>
+                        <span id="zero" onclick="display('0')" class=" brac zero">0</span>
+                        <span id="dzero" onclick="display('000')" class=" per dzero">000</span>
+                        <span id="results" onclick="solve()" class="  btn"><button>&equals;</button></span>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
